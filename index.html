@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Máquina do Carrinho Laranja: 3 vídeos prontos para o TikTok Shop</title>
+<meta name="description" content="Mande os clipes do celular no chat e receba 3 vídeos prontos para o TikTok Shop, com legenda, voz e capa. Sem editar nada. Guia completo + Prompt Mestre por R$ 47.">
+<meta name="theme-color" content="#0A0A0F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Máquina do Carrinho Laranja">
+<meta property="og:description" content="Mande os clipes no chat e receba 3 vídeos prontos para o TikTok Shop. Sem editar nada.">
+<meta property="og:image" content="https://ericlsg-19.github.io/maquina/img/og.png">
+<meta property="og:url" content="https://ericlsg-19.github.io/maquina/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icone-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{ --preto:#0A0A0F; --preto2:#14141C; --preto3:#1D1D28; --borda:#2A2A3A; --texto:#F2F2F7; --suave:#A3A3B8;
+  --rosa:#FE2C55; --ciano:#25F4EE; --laranja:#FF6B00; --amarelo:#FFE600; --verde:#18C08F }
+*{ box-sizing:border-box; margin:0; padding:0 }
+html{ scroll-behavior:smooth }
+body{ font-family:"Inter",system-ui,-apple-system,sans-serif; background:var(--preto); color:var(--texto); line-height:1.55; -webkit-font-smoothing:antialiased }
+a{ color:inherit }
+img{ max-width:100%; display:block }
+.wrap{ max-width:560px; margin:0 auto; padding:0 20px }
+section{ padding:56px 0 }
+.kicker{ font-size:12px; font-weight:900; letter-spacing:2.4px; text-transform:uppercase; color:var(--ciano); margin-bottom:10px }
+h1{ font-size:clamp(34px,10vw,50px); line-height:1; font-weight:900; letter-spacing:-1.2px; text-transform:uppercase; text-shadow:-2px 0 var(--ciano),2px 0 var(--rosa) }
+h2{ font-size:clamp(26px,7.4vw,34px); line-height:1.08; font-weight:900; letter-spacing:-.6px; margin-bottom:14px }
+h3{ font-size:18px; font-weight:800; margin-bottom:4px }
+p{ color:#DADAE6 } .lead{ font-size:18px; color:#E9E9F2 }
+.hl{ background:var(--amarelo); color:var(--preto); padding:0 8px; border-radius:8px; -webkit-box-decoration-break:clone; box-decoration-break:clone; text-shadow:none }
+.rosa{ color:var(--rosa) } .ciano{ color:var(--ciano) } .laranja{ color:var(--laranja) }
+
+/* botão */
+.btn{ display:flex; align-items:center; justify-content:center; gap:10px; width:100%; padding:18px 22px; border-radius:16px; background:var(--laranja); color:#fff;
+  font-weight:900; font-size:18px; text-decoration:none; box-shadow:0 6px 0 #B34700, 0 14px 30px rgba(255,107,0,.35); transition:transform .1s }
+.btn:active{ transform:translateY(3px); box-shadow:0 3px 0 #B34700 }
+.selos{ display:flex; flex-wrap:wrap; justify-content:center; gap:6px 14px; margin-top:14px; font-size:13px; color:var(--suave) }
+
+/* hero */
+.hero{ position:relative; overflow:hidden; padding:28px 0 48px;
+  background:radial-gradient(circle at 85% 8%,rgba(254,44,85,.5),transparent 40%),radial-gradient(circle at 5% 55%,rgba(37,244,238,.28),transparent 42%),radial-gradient(circle at 70% 100%,rgba(255,107,0,.55),transparent 50%),var(--preto) }
+.hero::before{ content:""; position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px); background-size:28px 28px; pointer-events:none }
+.hero .wrap{ position:relative }
+.topo{ display:flex; align-items:center; gap:10px; margin-bottom:26px; font-weight:800; font-size:14px }
+.topo img{ width:38px; height:38px; border-radius:50% }
+.abas{ margin-left:auto; color:var(--suave); font-size:13px } .abas b{ color:#fff; border-bottom:2px solid #fff; margin-left:10px }
+.hero .lead{ margin:18px 0 22px }
+.vitrine{ display:flex; gap:12px; justify-content:center; margin:30px 0 26px }
+.vitrine img{ width:46%; border-radius:18px; box-shadow:0 18px 40px rgba(0,0,0,.55); border:1px solid #2A2A3A }
+.vitrine img:first-child{ transform:rotate(-4deg) translateY(10px) } .vitrine img:last-child{ transform:rotate(4deg) translateY(10px) }
+
+/* comentários */
+.coment{ display:flex; gap:12px; background:var(--preto2); border:1px solid var(--borda); border-radius:16px; padding:14px; margin:12px 0 }
+.av{ flex:none; width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:18px; background:linear-gradient(135deg,#7A5CFF,var(--ciano)) }
+.av.l{ background:linear-gradient(135deg,var(--laranja),var(--rosa)) }
+.coment .nome{ font-size:12px; font-weight:800; color:var(--suave); margin-bottom:2px } .coment .fix{ color:var(--laranja); margin-left:6px }
+
+/* antes x depois */
+.vs{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:18px }
+.vs div{ border-radius:16px; padding:16px 14px }
+.vs .ruim{ background:#2A1018; border:1px solid #5A1D2C } .vs .bom{ background:#0E2621; border:1px solid #1E5A4B }
+.vs h3{ font-size:16px } .vs .ruim h3{ color:var(--rosa) } .vs .bom h3{ color:var(--verde) }
+.vs ul{ list-style:none; font-size:14px; color:#DADAE6 } .vs li{ margin:6px 0 }
+
+/* passos */
+.passos{ counter-reset:p; margin-top:20px }
+.passo{ display:flex; gap:14px; align-items:flex-start; margin:16px 0 }
+.passo .n{ flex:none; width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,var(--laranja),var(--rosa)); display:flex; align-items:center; justify-content:center; font-weight:900; font-size:20px; box-shadow:0 6px 18px rgba(254,44,85,.35) }
+.passo p{ font-size:15px }
+
+/* cards */
+.cards{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:18px }
+.card{ background:var(--preto2); border:1px solid var(--borda); border-radius:16px; padding:16px 14px }
+.card .ico{ font-size:26px; margin-bottom:6px } .card h3{ font-size:15px } .card p{ font-size:13.5px; color:var(--suave) }
+.card.largo{ grid-column:1/-1 }
+
+/* galeria */
+.galeria{ display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding:6px 20px 16px; margin:18px -20px 0 }
+.galeria img{ flex:none; width:62%; max-width:260px; border-radius:16px; scroll-snap-align:center; border:1px solid var(--borda) }
+.dica-scroll{ font-size:12px; color:var(--suave); text-align:center }
+
+/* listas */
+ul.check{ list-style:none; margin-top:14px }
+ul.check li{ position:relative; padding-left:32px; margin:10px 0; font-size:15.5px }
+ul.check li::before{ content:"✓"; position:absolute; left:0; top:1px; width:22px; height:22px; border-radius:7px; background:rgba(37,244,238,.12); color:var(--ciano); font-weight:900; font-size:13px; display:flex; align-items:center; justify-content:center }
+ul.x li::before{ content:"✕"; background:rgba(254,44,85,.12); color:var(--rosa) }
+
+/* requisitos */
+.req{ background:var(--preto2); border:1px solid var(--borda); border-radius:18px; padding:18px; margin-top:16px }
+.req .item{ display:flex; gap:12px; padding:12px 0; border-bottom:1px solid var(--borda) } .req .item:last-child{ border:0 }
+.req .tag{ flex:none; font-size:11px; font-weight:900; padding:3px 9px; border-radius:99px; height:fit-content; margin-top:2px }
+.tag.ob{ background:var(--laranja); color:#fff } .tag.gr{ background:var(--verde); color:#04110D } .tag.op{ background:var(--rosa); color:#fff }
+.req h3{ font-size:15px } .req p{ font-size:13.5px; color:var(--suave) }
+
+/* oferta */
+.oferta{ position:relative; border-radius:24px; padding:26px 20px; background:linear-gradient(160deg,#1A1A26,#0F0F16); border:2px solid var(--laranja); box-shadow:0 0 0 6px rgba(255,107,0,.12) }
+.oferta .selo{ position:absolute; top:-14px; left:50%; transform:translateX(-50%) rotate(-2deg); background:var(--ciano); color:var(--preto); font-weight:900; font-size:12px; letter-spacing:1.2px; padding:5px 12px; border-radius:6px; white-space:nowrap }
+.preco{ text-align:center; margin:14px 0 18px }
+.preco .valor{ font-size:62px; font-weight:900; letter-spacing:-2px; line-height:1 } .preco .valor small{ font-size:24px; vertical-align:top; margin-right:4px }
+.preco .sub{ color:var(--suave); font-size:14px; margin-top:6px }
+
+/* faq */
+details{ background:var(--preto2); border:1px solid var(--borda); border-radius:14px; padding:16px; margin:10px 0 }
+summary{ font-weight:800; cursor:pointer; list-style:none; display:flex; justify-content:space-between; gap:10px }
+summary::-webkit-details-marker{ display:none } summary::after{ content:"+"; color:var(--laranja); font-size:22px; line-height:1 }
+details[open] summary::after{ content:"–" } details p{ margin-top:10px; font-size:14.5px; color:#CFCFDD }
+
+.garantia{ display:flex; gap:16px; align-items:center; background:#0E2621; border:1px solid #1E5A4B; border-radius:18px; padding:18px }
+.garantia .g{ flex:none; width:64px; height:64px; border-radius:50%; border:3px solid var(--verde); display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:900; color:var(--verde); line-height:1 }
+.garantia .g b{ font-size:24px } .garantia .g small{ font-size:9px; letter-spacing:1px }
+
+footer{ padding:36px 0 120px; border-top:1px solid var(--borda); font-size:12.5px; color:#77778C }
+footer p{ color:#77778C; margin:8px 0 }
+
+/* barra fixa */
+.fixa{ position:fixed; left:0; right:0; bottom:0; padding:12px 16px calc(12px + env(safe-area-inset-bottom)); background:rgba(10,10,15,.92); backdrop-filter:blur(10px); border-top:1px solid var(--borda);
+  display:flex; align-items:center; gap:12px; transform:translateY(110%); visibility:hidden; transition:transform .3s, visibility .3s; z-index:9 }
+.fixa.on{ transform:none; visibility:visible }
+.fixa .info{ font-size:13px; line-height:1.2 } .fixa .info b{ display:block; font-size:18px }
+.fixa .btn{ padding:14px 16px; font-size:16px; box-shadow:0 4px 0 #B34700 }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="topo"><img src="img/icone-180.png" alt=""><span>Máquina do Carrinho Laranja</span><span class="abas">Seguindo <b>Para Você</b></span></div>
+    <div class="kicker">Para afiliados do TikTok Shop</div>
+    <h1>Mande os clipes.<br><span class="hl">Receba 3 vídeos</span><br>prontos.</h1>
+    <p class="lead">Você grava o produto no celular, manda no chat do Claude e recebe <b class="ciano">3 versões diferentes</b>, com legenda animada, voz e capa. <b>Sem CapCut e sem saber programar.</b></p>
+    <a class="btn" href="https://buy.stripe.com/aFaeVfes0bfTfSH7es9R600" data-cta>🛒 Quero a Máquina por R$ 47</a>
+    <div class="selos"><span>🔒 Pagamento seguro (Stripe)</span><span>⚡ Cartão ou Pix</span><span>📩 Acesso imediato</span><span>🛡️ Garantia de 7 dias</span></div>
+    <div class="vitrine"><img src="img/tela-1.jpg" alt="Capa do guia Máquina do Carrinho Laranja"><img src="img/tela-5.jpg" alt="Os 3 formatos de vídeo A, B e C"></div>
+  </div>
+</header>
+
+<!-- DOR -->
+<section><div class="wrap">
+  <div class="kicker">Seja sincero(a)</div>
+  <h2>Quantas horas você <span class="hl">perdeu</span> no CapCut essa semana?</h2>
+  <div class="vs">
+    <div class="ruim"><h3>😩 Hoje</h3><ul><li>2–3 h editando <b>um</b> vídeo</li><li>Legenda feita na mão</li><li>Posta 1 vídeo e torce</li><li>Produto aparece tarde</li><li>Fala o preço… e o preço muda</li></ul></div>
+    <div class="bom"><h3>🚀 Com a Máquina</h3><ul><li>Manda os clipes <b>no chat</b></li><li>Legenda <b>automática</b></li><li><b>3 versões</b> para testar</li><li>Produto <b>no 1º segundo</b></li><li>Regras de venda <b>embutidas</b></li></ul></div>
+  </div>
+  <div class="coment"><div class="av">😮</div><div><div class="nome">@afiliada_cansada</div><p>pera, eu só mando os clipes e ele devolve os 3 vídeos editados??</p></div></div>
+  <div class="coment"><div class="av l">🛒</div><div><div class="nome">@maquina.do.carrinho <span class="fix">📌 fixado</span></div><p>Isso. Você grava e a Máquina edita. O trabalho pesado sai das suas mãos.</p></div></div>
+  <p style="font-size:12px;color:#77778C;margin-top:6px">Comentários ilustrativos do formato do TikTok.</p>
+</div></section>
+
+<!-- COMO FUNCIONA -->
+<section style="background:var(--preto2)"><div class="wrap">
+  <div class="kicker">Como funciona</div>
+  <h2>Você conversa. <span class="hl">Ela trabalha.</span></h2>
+  <div class="passos">
+    <div class="passo"><div class="n">1</div><div><h3>Grave o produto</h3><p>3 tipos de take no celular: o produto em uso, um close na mão e o resultado. O guia mostra exatamente como.</p></div></div>
+    <div class="passo"><div class="n">2</div><div><h3>Mande no chat do Claude</h3><p>Os clipes e os prints do produto. Ele escreve 3 roteiros. Você grava a voz (e ele corta os erros) ou usa uma voz clonada.</p></div></div>
+    <div class="passo"><div class="n">3</div><div><h3>Receba A, B e C prontos</h3><p>3 vídeos verticais com hook, legenda animada, cortes rápidos, CTA para o carrinho e capa. É só revisar e postar.</p></div></div>
+  </div>
+  <img src="img/tela-6.jpg" alt="Conversa ilustrando o fluxo com o Claude" style="width:72%;margin:20px auto 0;border-radius:18px;border:1px solid var(--borda)">
+</div></section>
+
+<!-- O QUE VEM -->
+<section><div class="wrap">
+  <div class="kicker">O que você recebe</div>
+  <h2>Tudo que você precisa, <span class="hl">já pronto</span></h2>
+  <div class="cards">
+    <div class="card largo"><div class="ico">📕</div><h3>Guia completo (25 telas, formato celular)</h3><p>O método, a instalação passo a passo e a rotina do dia a dia, sempre explicando o <b>porquê</b> de cada coisa. Feito para ler no celular, como stories.</p></div>
+    <div class="card largo"><div class="ico">🧠</div><h3>Prompt Mestre</h3><p>Um arquivo que você anexa no Claude Code. Ele monta, testa e liga o sistema inteiro para você: o editor de vídeo, as legendas, as vozes, as capas e as regras.</p></div>
+    <div class="card"><div class="ico">🎬</div><h3>3 formatos por produto</h3><p>Abertura, legenda, ritmo e cor diferentes, sem cara de vídeo repetido.</p></div>
+    <div class="card"><div class="ico">💬</div><h3>Legenda animada</h3><p>Palavra por palavra, sincronizada com a voz.</p></div>
+    <div class="card"><div class="ico">🎙️</div><h3>Sua voz, limpa</h3><p>Errou? A Máquina corta as repetições sozinha.</p></div>
+    <div class="card"><div class="ico">🖼️</div><h3>Capas automáticas</h3><p>No mesmo padrão, para o perfil ficar bonito.</p></div>
+  </div>
+  <div class="galeria">
+    <img src="img/tela-5.jpg" alt="Os 3 formatos" loading="lazy"><img src="img/tela-10.jpg" alt="Instalação passo a passo" loading="lazy">
+    <img src="img/tela-16.jpg" alt="Regras de ouro" loading="lazy"><img src="img/tela-22.jpg" alt="Frases prontas" loading="lazy">
+    <img src="img/tela-6.jpg" alt="Conversa" loading="lazy">
+  </div>
+  <p class="dica-scroll">← arraste para ver as telas do guia →</p>
+</div></section>
+
+<!-- MÉTODO -->
+<section style="background:var(--preto2)"><div class="wrap">
+  <div class="kicker">O método</div>
+  <h2>Não é só edição. É o que <span class="hl">faz vender.</span></h2>
+  <ul class="check">
+    <li><b>Produto no primeiro frame</b>, que é o que o TikTok Shop valoriza</li>
+    <li><b>Hook em 3 segundos</b>, com 4 ângulos testados (curiosidade, dor, choque, problema/solução)</li>
+    <li><b>Característica → benefício</b>: a pessoa compra o que vai sentir</li>
+    <li><b>Ritmo sem respiro</b>, com corte das pausas e velocidade ajustada</li>
+    <li><b>Copiar melhorando</b>: como superar vídeos virais sem copiar</li>
+    <li><b>Nunca preço exato</b>, só "menos de X", porque o preço muda e o vídeo fica</li>
+    <li><b>Erro proposital com responsabilidade</b> para gerar comentários, sem enganar ninguém</li>
+  </ul>
+</div></section>
+
+<!-- PRA QUEM -->
+<section><div class="wrap">
+  <div class="kicker">É pra você?</div>
+  <h2>Feito para quem…</h2>
+  <ul class="check">
+    <li>É afiliado(a) do TikTok Shop e perde horas editando</li>
+    <li>Posta pouco por falta de tempo</li>
+    <li>Quer testar o que vende em vez de chutar</li>
+    <li>Não sabe programar, e nem precisa</li>
+  </ul>
+  <h2 style="margin-top:30px">Não é para quem…</h2>
+  <ul class="check x">
+    <li>Procura dinheiro fácil sem gravar nada</li>
+    <li>Não quer assinar o Claude (o sistema roda nele)</li>
+    <li>Espera resultado garantido. Venda depende do produto, da oferta e da constância</li>
+  </ul>
+</div></section>
+
+<!-- REQUISITOS -->
+<section style="background:var(--preto2)"><div class="wrap">
+  <div class="kicker">Transparência</div>
+  <h2>O que você <span class="hl">precisa ter</span></h2>
+  <p>A Máquina roda nas suas próprias contas. Os custos dessas contas <b>não estão inclusos</b> no preço do material:</p>
+  <div class="req">
+    <div class="item"><span class="tag ob">PRECISA</span><div><h3>🤖 Claude, plano pago com Claude Code</h3><p>É ele que monta e opera a Máquina. Funciona pelo app do Claude no celular.</p></div></div>
+    <div class="item"><span class="tag gr">GRÁTIS</span><div><h3>🐙 Conta no GitHub</h3><p>Guarda o seu projeto. O guia mostra como criar em 2 minutos.</p></div></div>
+    <div class="item"><span class="tag gr">GRÁTIS</span><div><h3>🛒 Conta de afiliado no TikTok Shop</h3><p>Para postar com o produto vinculado.</p></div></div>
+    <div class="item"><span class="tag op">OPCIONAL</span><div><h3>🎙️ ElevenLabs (plano pago)</h3><p>Só se quiser voz clonada, sempre com a autorização da dona ou do dono da voz.</p></div></div>
+  </div>
+</div></section>
+
+<!-- OFERTA -->
+<section id="oferta"><div class="wrap">
+  <div class="oferta">
+    <div class="selo">ACESSO IMEDIATO</div>
+    <h2 style="text-align:center;margin-top:6px">Máquina do Carrinho Laranja</h2>
+    <ul class="check" style="margin-top:6px">
+      <li>Guia completo, 25 telas no formato celular</li>
+      <li>Prompt Mestre que instala tudo para você</li>
+      <li>Método de hooks, roteiro e edição</li>
+      <li>3 formatos de vídeo + capas automáticas</li>
+      <li>Frases prontas, solução de problemas e checklists</li>
+    </ul>
+    <div class="preco"><div class="valor"><small>R$</small>47</div><div class="sub">pagamento único · cartão ou Pix</div></div>
+    <a class="btn" href="https://buy.stripe.com/aFaeVfes0bfTfSH7es9R600" data-cta>🛒 Quero a Máquina agora</a>
+    <div class="selos"><span>🔒 Stripe</span><span>📩 Liberado na hora</span><span>🛡️ 7 dias de garantia</span></div>
+  </div>
+  <div class="garantia" style="margin-top:22px"><div class="g"><b>7</b><small>DIAS</small></div><div><h3>Garantia de 7 dias</h3><p style="font-size:14px">Se não for para você, peça o reembolso em até 7 dias após a compra e devolvemos o valor. Sem burocracia.</p></div></div>
+</div></section>
+
+<!-- FAQ -->
+<section style="background:var(--preto2)"><div class="wrap">
+  <div class="kicker">Dúvidas</div>
+  <h2>Perguntas frequentes</h2>
+  <details><summary>Preciso saber programar?</summary><p>Não. O Claude faz a parte técnica e explica cada etapa em português simples. Sua parte é criar as contas, gravar os clipes e aprovar os vídeos.</p></details>
+  <details><summary>Funciona só pelo celular?</summary><p>Sim. O Claude Code roda na nuvem: você instala e usa tudo pelo app do Claude, sem computador.</p></details>
+  <details><summary>Como recebo o material?</summary><p>Logo depois do pagamento você é levado(a) à página de download com o guia em PDF e o Prompt Mestre. O link também chega por e-mail.</p></details>
+  <details><summary>Tem mensalidade?</summary><p>O material é pagamento único de R$ 47. O que é assinatura é o Claude (e o ElevenLabs, se você quiser voz clonada), pagos direto a esses serviços.</p></details>
+  <details><summary>Funciona com qualquer produto?</summary><p>Com produtos físicos que dá para mostrar em uso: o método foi feito para isso. Quanto melhores os takes, melhores os vídeos.</p></details>
+  <details><summary>É oficial do TikTok ou do Claude?</summary><p>Não. É um material independente que usa essas ferramentas, sem afiliação ou patrocínio delas.</p></details>
+  <details><summary>Vou vender garantido?</summary><p>Ninguém pode garantir vendas. A Máquina economiza o seu tempo e aplica um método de vídeo para afiliados; o resultado depende do produto, da oferta e da sua constância.</p></details>
+  <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Responda ao e-mail da compra pedindo o reembolso.</p></details>
+</div></section>
+
+<!-- CTA FINAL -->
+<section><div class="wrap" style="text-align:center">
+  <div style="font-size:56px">🛒</div>
+  <h2 style="margin-top:8px">Grave uma vez. <span class="hl">Teste 3 vezes.</span></h2>
+  <p class="lead" style="margin:10px 0 22px">O trabalho pesado agora é da Máquina. O seu é escolher bons produtos e gravar bons takes.</p>
+  <a class="btn" href="https://buy.stripe.com/aFaeVfes0bfTfSH7es9R600" data-cta>🛒 Quero a Máquina por R$ 47</a>
+  <div class="selos"><span>🔒 Pagamento seguro</span><span>⚡ Cartão ou Pix</span><span>🛡️ 7 dias de garantia</span></div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><b style="color:#A3A3B8">Máquina do Carrinho Laranja</b> · material digital independente.</p>
+  <p>Este produto não é afiliado, patrocinado nem aprovado pelo TikTok, pela Anthropic (Claude) ou pela ElevenLabs; as marcas pertencem aos seus donos. Os resultados não são garantidos e dependem de cada pessoa. Pagamentos processados pelo Stripe. Dúvidas e reembolsos: responda ao e-mail da compra.</p>
+</div></footer>
+
+<div class="fixa" id="fixa"><div class="info">Máquina do Carrinho Laranja<b>R$ 47</b></div><a class="btn" href="https://buy.stripe.com/aFaeVfes0bfTfSH7es9R600" data-cta style="flex:1">🛒 Quero agora</a></div>
+
+<script>
+  // barra fixa aparece depois do topo e some na oferta
+  const fixa = document.getElementById('fixa'), oferta = document.getElementById('oferta');
+  const onScroll = () => {
+    const y = window.scrollY, o = oferta.getBoundingClientRect();
+    fixa.classList.toggle('on', y > 520 && !(o.top < window.innerHeight && o.bottom > 0));
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+</script>
+</body>
+</html>
