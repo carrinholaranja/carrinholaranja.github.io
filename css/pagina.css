@@ -1,0 +1,43 @@
+/* Páginas institucionais (suporte, privacidade, termos) — mesmo visual do site */
+:root{ --preto:#0A0A0F; --preto2:#14141C; --borda:#2A2A3A; --texto:#ECECF4; --suave:#A3A3B8;
+  --rosa:#FE2C55; --ciano:#25F4EE; --laranja:#FF6B00; --amarelo:#FFE600; --verde:#18C08F }
+*{ box-sizing:border-box; margin:0; padding:0 }
+html{ scroll-behavior:smooth }
+body{ font-family:"Inter",system-ui,-apple-system,sans-serif; background:var(--preto); color:var(--texto); line-height:1.65; -webkit-font-smoothing:antialiased }
+a{ color:var(--ciano) }
+.wrap{ max-width:720px; margin:0 auto; padding:0 20px }
+header.topo{ border-bottom:1px solid var(--borda); background:radial-gradient(circle at 90% -40%,rgba(254,44,85,.35),transparent 55%),var(--preto) }
+header.topo .wrap{ display:flex; align-items:center; gap:12px; padding-top:14px; padding-bottom:14px }
+header.topo img{ width:36px; height:36px; border-radius:50% }
+header.topo a.marca{ color:#fff; text-decoration:none; font-weight:800; font-size:15px }
+header.topo a.comprar{ margin-left:auto; white-space:nowrap; background:var(--laranja); color:#fff; text-decoration:none; font-weight:800; font-size:13px; padding:8px 14px; border-radius:99px }
+main{ padding:34px 0 60px }
+.kicker{ font-size:12px; font-weight:900; letter-spacing:2.2px; text-transform:uppercase; color:var(--ciano); margin-bottom:8px }
+h1{ font-size:clamp(28px,7vw,40px); line-height:1.08; font-weight:900; letter-spacing:-.6px; margin-bottom:10px }
+.atualizado{ color:var(--suave); font-size:13.5px; margin-bottom:22px }
+.resumo{ background:var(--preto2); border:1px solid var(--borda); border-left:4px solid var(--laranja); border-radius:14px; padding:16px 18px; margin:18px 0 26px }
+.resumo b{ color:#fff }
+.indice{ background:var(--preto2); border:1px solid var(--borda); border-radius:14px; padding:14px 18px; margin-bottom:26px; font-size:14.5px }
+.indice ol{ padding-left:20px } .indice li{ margin:3px 0 }
+h2{ font-size:20px; font-weight:800; margin:30px 0 8px; scroll-margin-top:16px }
+h2 .n{ color:var(--laranja); margin-right:6px }
+h3{ font-size:16px; font-weight:800; margin:16px 0 4px }
+p, li{ font-size:15.5px; color:#D7D7E3 }
+p{ margin:8px 0 }
+ul, ol{ padding-left:22px; margin:8px 0 }
+li{ margin:5px 0 }
+b, strong{ color:#fff }
+table{ width:100%; border-collapse:collapse; margin:12px 0; font-size:14px }
+th{ text-align:left; background:var(--preto2); color:#fff; padding:9px 10px; border:1px solid var(--borda) }
+td{ padding:9px 10px; border:1px solid var(--borda); vertical-align:top; color:#D7D7E3 }
+.card{ background:var(--preto2); border:1px solid var(--borda); border-radius:16px; padding:18px; margin:14px 0 }
+.card h3{ margin-top:0 }
+.contato{ display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 }
+.contato a.btn{ display:inline-flex; align-items:center; gap:8px; background:var(--laranja); color:#fff; text-decoration:none; font-weight:800; padding:13px 18px; border-radius:14px; box-shadow:0 4px 0 #B34700 }
+.contato a.btn.borda{ background:transparent; border:2px solid var(--borda); box-shadow:none }
+details{ background:var(--preto2); border:1px solid var(--borda); border-radius:12px; padding:14px 16px; margin:10px 0 }
+summary{ font-weight:800; cursor:pointer; color:#fff }
+footer{ border-top:1px solid var(--borda); padding:26px 0 40px; font-size:13px; color:#80809A }
+footer p{ font-size:13px; color:#80809A; margin:6px 0 }
+footer nav{ display:flex; flex-wrap:wrap; gap:6px 16px; margin-bottom:10px }
+footer nav a{ color:#C9C9D9; text-decoration:none; font-weight:600 }
