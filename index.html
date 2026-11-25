@@ -132,7 +132,7 @@ footer p{ color:#77778C; margin:8px 0 }
     <div class="kicker">Para afiliados do TikTok Shop</div>
     <h1>Mande os clipes.<br><span class="hl">Receba 3 vídeos</span><br>prontos.</h1>
     <p class="lead">Você grava o produto no celular, manda no chat do Claude e recebe <b class="ciano">3 versões diferentes</b>, com legenda animada, voz e capa. <b>Sem CapCut e sem saber programar.</b></p>
-    <a class="btn" href="https://buy.stripe.com/28EeVefzZaer4zA6DSbAs00" data-cta>🛒 Quero a Máquina por R$ 47</a>
+    <a class="btn" href="https://maquina.carrinholaranja.workers.dev/comprar?origem=topo" data-cta>🛒 Quero a Máquina por R$ 47</a>
     <div class="selos"><span>🔒 Pagamento seguro (Stripe)</span><span>⚡ Cartão ou Pix</span><span>📩 Acesso imediato</span></div>
     <div class="vitrine"><img src="img/tela-1.jpg" alt="Capa do guia Máquina do Carrinho Laranja"><img src="img/tela-5.jpg" alt="Os 3 formatos de vídeo A, B e C"></div>
   </div>
@@ -244,7 +244,7 @@ footer p{ color:#77778C; margin:8px 0 }
       <li><b>🎁 Bônus (a partir do 8º dia):</b> 60 hooks prontos + produtos campeões da semana, atualizados toda semana</li>
     </ul>
     <div class="preco"><div class="valor"><small>R$</small>47</div><div class="sub">pagamento único · cartão ou Pix</div></div>
-    <a class="btn" href="https://buy.stripe.com/28EeVefzZaer4zA6DSbAs00" data-cta>🛒 Quero a Máquina agora</a>
+    <a class="btn" href="https://maquina.carrinholaranja.workers.dev/comprar?origem=oferta" data-cta>🛒 Quero a Máquina agora</a>
     <div class="selos"><span>🔒 Stripe</span><span>📩 Liberado na hora</span></div>
   </div>
 </div></section>
@@ -269,7 +269,7 @@ footer p{ color:#77778C; margin:8px 0 }
   <div style="font-size:56px">🛒</div>
   <h2 style="margin-top:8px">Grave uma vez. <span class="hl">Teste 3 vezes.</span></h2>
   <p class="lead" style="margin:10px 0 22px">O trabalho pesado agora é da Máquina. O seu é escolher bons produtos e gravar bons takes.</p>
-  <a class="btn" href="https://buy.stripe.com/28EeVefzZaer4zA6DSbAs00" data-cta>🛒 Quero a Máquina por R$ 47</a>
+  <a class="btn" href="https://maquina.carrinholaranja.workers.dev/comprar?origem=final" data-cta>🛒 Quero a Máquina por R$ 47</a>
   <div class="selos"><span>🔒 Pagamento seguro</span><span>⚡ Cartão ou Pix</span></div>
 </div></section>
 
@@ -279,7 +279,7 @@ footer p{ color:#77778C; margin:8px 0 }
   <p>Este produto não é afiliado, patrocinado nem aprovado pelo TikTok, pela Anthropic (Claude) ou pela ElevenLabs; as marcas pertencem aos seus donos. Os resultados não são garantidos e dependem de cada pessoa. Pagamentos processados pelo Stripe. Dúvidas e reembolsos: veja a página de <a href="suporte.html" style="color:#A3A3B8">Suporte</a>.</p>
 </div></footer>
 
-<div class="fixa" id="fixa"><div class="info">Máquina do Carrinho Laranja<b>R$ 47</b></div><a class="btn" href="https://buy.stripe.com/28EeVefzZaer4zA6DSbAs00" data-cta style="flex:1">🛒 Quero agora</a></div>
+<div class="fixa" id="fixa"><div class="info">Máquina do Carrinho Laranja<b>R$ 47</b></div><a class="btn" href="https://maquina.carrinholaranja.workers.dev/comprar?origem=barra" data-cta style="flex:1">🛒 Quero agora</a></div>
 
 <script>
   // barra fixa aparece depois do topo e some na oferta
@@ -289,6 +289,10 @@ footer p{ color:#77778C; margin:8px 0 }
     fixa.classList.toggle('on', y > 520 && !(o.top < window.innerHeight && o.bottom > 0));
   };
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // origem do link (ex.: carrinholaranja.github.io/?o=videoA) vai junto no botão, para medir cada vídeo
+  const o = (new URLSearchParams(location.search).get('o') || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 40);
+  if (o) document.querySelectorAll('a[data-cta]').forEach(a => { a.href += '&o=' + encodeURIComponent(o); });
 </script>
 </body>
 </html>
